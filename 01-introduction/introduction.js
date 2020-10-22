@@ -1,6 +1,16 @@
 // Mon premier fichier .js - pisola Colombbus
 // ce fichier est lié à la page 01-04-introduction.html
 
+// un commentaire monoligne
+
+/* un commentaire 
+multiligne en JS */
+
+/* un commentaire multiligne sur une seule ligne */
+
+/* une ligne 
+une autre  CTRL + MAJ + A */
+
 let bonjour = document.getElementById('b1');
 let ajouter = document.getElementById('b2');
 
