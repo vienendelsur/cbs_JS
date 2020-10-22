@@ -1,0 +1,19 @@
+/* les styles du répo des cours et des exos JS - Pisola Colombbus */
+
+
+body {
+    background-color: lightblue;
+}
+
+#wrapper {
+    background-color: #fff;
+    width: 80%;
+}
+
+/* pour surligner le texte en jaune */
+.stabilo {
+    background-color: yellow;
+}
+
+
+/* les titres */
