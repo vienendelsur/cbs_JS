@@ -37,3 +37,5 @@ let ville;
 ville = 'Suresnes';
 
 console.log(ville);
+
+prompt();// avec prompt() on a une fenêtre avec un champs de saisie
