@@ -1,2 +1,2 @@
 # cbs_JS
-cours et exo J
+cours et exo Java Script
