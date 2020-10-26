@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - III 01 structures de contrôle</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- script en externe -->
+    <script src="introduction.js" async></script>
+   
+</head>
+<body>
+    <div id="wrapper">
+        <h1>JS - III 01 Les structures de contrôle</h1>
+        <p><a href="../index.html">Accueil</a></p>
+        <h2>1- Les conditions et les boucles</h2>
+        <p>Il existe deux types de structures de contrôle de base, que l'on retrouve dans tous les langages de programmation, et donc en JS.</p>
+       <ul>
+           <li>Les structures de contrôle conditionnelles : les <span class="stabilo">conditions</span></li>
+           <li>Les structures de contrôle de boucles : les <span class="stabilo">boucles</span></li>
+        </ul>
+
+        <p>Les conditions vont nous permettre d'éxécuter un certain nombre d'instruction si et seulement si une certaine condition est vérifiée</p>
+        <p>Les boucles vont nous permettre d'exécuter un bloc de code en boucle tant qu'une condition donnée est vérifiée.</p>
+
+        <h3>A- Présentation des conditions</h3>
+        <ul>
+            <li>La condition if (si) ;</li>
+            <li>La condition if... else (si... sinon) ;</li>
+            <li>La condition if... elseif... else (si... sinonsi... sinon).</li>
+        </ul>
+
+        <h3>B- Opérateurs de comparaison</h3>
+        <p>Comment vérifier les conditions ?</p>
+        <table>
+            <caption>Opérateurs de comparaison</caption>
+            <thead>
+                <tr>
+                    <th>Opérateurs</th>
+                    <th>Définition</th>
+                </tr>
+            </thead>
+            <!-- tr*3>td*2>p*3 -->
+            <tr>
+                <td>
+                    <p>==</p>
+                    <p>===</p>
+                    <p>!=</p>
+                </td>
+                <td>
+                    <p>Teste l'égalité sur les valeurs</p>
+                    <p>Teste l'égalité en terme de valeurs ET de types</p>
+                    <p>Teste la différence des valeurs</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><> (à éviter) VOIR </p>
+                    <p>!==</p>
+                    <p><</p>
+                </td>
+                <td>
+                    <p>Teste également la différence des valeurs</p>
+                    <p>Teste la différence en valeurs ou en type</p>
+                    <p>Teste si une valeur est strictement inférieure à une autre</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>></p>
+                    <p><=</p>
+                    <p>>=</p>
+                </td>
+                <td>
+                    <p>Teste si une valeur est strictement supérieure à une autre</p>
+                    <p>Teste si une valeur est strictement inférieure OU égale à une autre</p>
+                    <p>Teste si une valeur est strictement supérieure OU égale à une autre</p>
+                </td>
+            </tr>
+        </table>
+
+        <p class="stabilo">Dans le cas où la comparaison est vérifiée, le JavaScript renvoie le booléen <strong>true</strong>. Dans le cas contraire, le booléen <strong>false</strong> est renvoyé.</p>
+
+        </div><!-- fin wrapper --> 
+</body>
+</html>

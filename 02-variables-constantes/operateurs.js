@@ -52,3 +52,26 @@ alert('h contient : ' + h +
     '\nj contient : ' + j + 
     '\nl contient : ' + l 
 );
+
+//Opérateurs d'affectation
+// var chiffre1 = 5;
+let chiffre1 = 15;
+let chiffre2 = 2;
+
+let somme = chiffre1 % chiffre2;
+
+console.log(somme);
+
+// let prenom = "Audrey est chez elle et fait du js";
+// console.log(prenom);
+// console.log(typeof prenom);
+
+let m = 20;
+let o = 50;
+
+m += 15; // on ajoute 15 à la valeur stockée
+
+o *= 5;
+
+console.log(o);
+
