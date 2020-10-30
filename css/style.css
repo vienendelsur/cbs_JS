@@ -20,6 +20,8 @@ body {
 
 code {
     color: red;
+    background-color: lightgrey;
+    padding: 1px;
 }
 
 /* les titres */
