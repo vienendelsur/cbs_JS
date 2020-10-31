@@ -3,7 +3,7 @@
 
 body {
     background-color: lightblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 #wrapper {
@@ -18,10 +18,12 @@ body {
     background-color: yellow;
 }
 
-code {
-    color: red;
+li code {
+   
     background-color: lightgrey;
     padding: 1px;
+    font-family: 'Source Code Pro', monospace; 
+    color: red;
 }
 
 /* les titres */
