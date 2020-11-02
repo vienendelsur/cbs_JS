@@ -142,6 +142,91 @@
         // EXO 
         document.write('<h3>Un petit exercice dans un prompt() et une alert().</h3>');
 
+         // CONSIGNE réaliser un prompt() demandant son âge à un utilisateur, récupérer cette donnée et l'utiliser pour afficher "vous avez XX ans"
+
+         document.write('<h3 style="background: orangered;width: 40%;color: #fff;">Exo 2 une valeur au cube et au carré</h3>');
+        // CONSIGNE récupérer dans un prompt() une valeur donnée par un utilisateur
+        // envoyer ensuite une alert() indiquant le résultat de cette valeur au cube puis au carré
+        // puis on fera un document.write
+
+        let votreChiffre = prompt('Faisons un calcul, rentrez une chiffre ...');// 1- invitation avec le prompt() à saisir une valeur numérique dans la pop-up
+        // console.log(votreChiffre);// 1bis je vérifie que jusque là ça fonctionne
+        // document.write('Le chiffre rentré par l\'utilisateur : ' + votreChiffre );// 1bis je vérifie que jusque là ça fonctionne
+
+        let auCarre = votreChiffre * votreChiffre;//2- je calcule le contenu de la variable * 2
+        let auCube = votreChiffre * votreChiffre * votreChiffre;//3- je calcule le contenu de la variable au cube
+        console.log(auCarre, auCube);// vérification des calculs
+
+        alert('Vous avez saisi le chiffre : ' + votreChiffre + ' ce chiffre au carré est égal à ' + auCarre + '.');//4- j'affiche dans deux alert() les résultats des opérations
+        alert('Vous avez saisi le chiffre : ' + votreChiffre + ' ce chiffre au cube est égal à ' + auCube + '.');
+
+        document.write('<h2 style="background: orange;width: 50%;color: #fff;">6- Les conditions</h2>');
+
+        let a = 2, b = 5, c = 2;
+        //si a est supérieur à b 
+        // j'écris "a est supérieur à b "
+        //sinon j'écris "a n'est pas supérieur à b"
+
+        if (a > b) {
+            document.write('<p>a est supérieur à b</p>');
+        } else {
+            document.write('<p>a n\'est pas supérieur à b</p>');
+        }
+
+
+        //tester l'égalité de a et b
+        //puis montrer la valeur de a et b dans le document.write
+        if (a == b) {// égal en valeur
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' : a est égal à b</p>');
+        } else {
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' : a n\'est pas égal à b</p>');
+        }
+
+        //tester si la condition est remplie  : a et b sont-ils egaux en type de contenu et en valeur ? 
+        if ( a === b ) {// égal en valeur et en type
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' a et b sont égaux et sont tous les deux de même type </p>');
+        } else {
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' a est différent de b en type et/ou en valeur. </p>');
+        }
+
+        //EXO : tester la valeur de a par rapport au chiffre 5 ; inférieur ? égal ? supérieur ? ou alors c'est pas un nombre, dans une condition multiple
+
+        if (a < 5) {
+            document.write('<p style="background: green; color: white; width: 50%;">pour A qui vaut ' + a + ' A est inférieur à 5</p>');
+        } else if (a == 5) {
+            document.write('<p style="background: green; color: white; width: 50%;">pour A qui vaut ' + a + ' A est égal à 5</p>');
+        } else if (a > 5) {
+            document.write('<p style="background: green; color: white; width: 50%;">pour A qui vaut ' + a + ' A est supérieur à 5</p>');
+        } else {
+            document.write('<p style="background: green; color: white; width: 50%;">pour A qui vaut ' + a + ' A n\'est sans doute pas un nombre</p>');
+        }
+
+        //EXO : a est-il supérieur à b ET b est-il supérieur à c if... else...
+
+        if ( a > b && b > c ) {
+            document.write('<p>Pour a qui vaut ' + a + ', b qui vaut ' + b + ' et c qui vaut ' + c + ' a est supérieur à b ET b est supérieur à c</p>');
+        } else {
+            document.write('<p>Ici on teste si a (' + a + ') est sup. à b (' + b + ') ET si b est sup. à c (' + c + ') ; mais dans ce cas au moins une des deux conditions n\'est pas remplie</p>');
+        }
+
+        // EXO : a est supérieur à b OU b est supérieur à c
+
+        if ( a > b || b > c ) {
+             document.write('<p>ici on teste si a qui vaut ' + a + ' est supérieur à b qui vaut ' + b + ' ou si b est supérieur à c qui vaut ' + c + ' : ici au moins une des deux conditions est vraie.</p>');
+        } else {
+            document.write('<p>ici on teste si a qui vaut ' + a + ' est supérieur à b qui vaut ' + b + ' ou si b est supérieur à c qui vaut ' + c + ' : dans ce cas aucune des deux conditions n\'est vraie.</p>');
+        }
+
+        // EXO isNan ... 
+       
+
+
+
+
+
+
+
+
     </script>
 </head>
 <body>

@@ -18,8 +18,7 @@ body {
     background-color: yellow;
 }
 
-li code {
-   
+code {   
     background-color: lightgrey;
     padding: 1px;
     font-family: 'Source Code Pro', monospace; 
