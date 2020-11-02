@@ -20,12 +20,129 @@
     <script>
         document.write('<h1>01 Entrainement JS</h1>');
 
+        // titre 1
         document.write('<h2 style="background: orange;width: 75%;color: #fff;">1- Affichage</h2>');
 
         var maBoite;
         maBoite = 10;
 
-        document.write('<p>dans la variable maBoite il y a la valeur suivante : ' + maBoite + '</p>');
+        let monAge = 12;
+
+        document.write('<p>Dans la variable maBoite il y a la valeur suivante : ' + maBoite + '</p>');
+
+        console.log(maBoite);
+        console.log(monAge);
+
+        console.log('Un message dans le log.');
+        console.info('Une information à envoyer dans la console.');
+
+        //boîte alert()
+        // alert('Alerte ! Ceci est un message d\'alerte');
+
+        //boîte confirm()
+        // confirm('Confirmez-vous ? ');  
+        
+        //boîte prompt()
+        // prompt('Comment ça va ? ');
+
+        // let sonChien = prompt('Quel est le prénom de votre chien ? ');
+        // document.write('<p>Votre chien s\appelle ' + sonChien + '.</p>');
+
+        // let humeur = prompt('comment va ? ');         
+        // document.write('<p>Alors ? ça va ? ' + humeur + '</p>');
+
+        // portée locale ou globale de la variable !!!
+
+        // if(true){
+        //     let nombre = 9;
+        // }
+
+        // console.log(nombre);
+
+
+
+        let nombre2;
+        if(true){
+            nombre2 = 18;
+        }
+        console.log(nombre2);
+
+        // addition de valeurs (string)
+        var fruits = 'pommes';
+        console.info(fruits);
+        document.write('<p>Dans mon panier j\'ai des ' + fruits + '</p>');
+
+        fruits += ', et des fraises';        
+        console.info(fruits);
+        
+
+        fruits += 'et deux mangues';      
+        console.info(fruits);
+
+        document.write(fruits);
+
+        // addition d'une valeur numérique (number)
+        var noteEval = 12;
+        console.info(noteEval);
+
+        noteEval += 2;
+        console.info(noteEval);
+
+        // titre 2
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;">2- Type de données</h2>');
+
+        var monTexte = 'Voici une phrase pour Audrey, avec l\'apostrophe';
+        console.info(typeof monTexte);
+
+        document.write(typeof(noteEval) + '<br>');
+        document.write(typeof(monTexte) + '<br>');
+
+        //titre 3 Constantes
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;">3- Constantes</h2>');
+        
+        const BOUGE_PAS = "Ma constante impossible à modifier !";
+        
+        document.write('<p style="background: grey;">' + BOUGE_PAS + '</p>');
+        //pas le droit de la redéfinir !
+        // BOUGE_PAS ='toto';
+
+         //titre 4 Concaténer
+         document.write('<h2 style="background: orange;width: 75%;color: #fff;" title="le mot qui plaît à Audrey !">4- Concaténer</h2>');
+
+         let prenom = 'Bruce', nom = 'Willis';
+         document.write(prenom + ' ' + nom);
+
+        //titre 5 Opérateurs numériques
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;" title="">5- Opérateurs numériques</h2>');
+
+        // addition 
+        let addition = 10 + 15;
+        document.write('<p>Une addition : ' + addition + '</p>');
+
+        // multiplication 
+        let multiplication = 10 * 15;
+        document.write('<p>Une multiplication : ' + multiplication + '</p>');
+
+         // soustraction 
+        var soustraction = 10 - 5;
+        // console.log(soustraction);
+        document.write('<p>Une soustraction : ' + soustraction + '</p>');
+
+        // division 
+        var division = 10 / 3;
+        document.write('<p>Une division : ' + division + '</p>');
+
+        console.log(addition, multiplication, soustraction, division);
+
+        //modulo
+        //je partage 10 billes entre trois personnes il m'en reste combien ? 
+        var modulo = 10 % 3;
+        // console.log(modulo);
+        document.write('<p>Le modulo de 10 % 3 est ' + modulo + '</p>');
+
+        // EXO 
+        document.write('<h3>Un petit exercice dans un prompt() et une alert().</h3>');
+
     </script>
 </head>
 <body>
