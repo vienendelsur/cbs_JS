@@ -18,22 +18,35 @@
     </style>
     <!-- script dans l'en-tête  -->
     <script>
+
+        /*
+        PAGE ENTRAINEMENT RECAP
+        1- AFFICHAGE
+        2- TYPE DE DONNEES
+        3- CONSTANTES
+        4- CONCATENER
+        5- OPERATEURS NUMERIQUES
+        6- CONDITIONS
+        
+        */
+
         document.write('<h1>01 Entrainement JS</h1>');
 
+        // 1- AFFICHAGE
         document.write('<h2 style="background: orange;width: 50%;color: #fff;">1- Affichage</h2>');
 
-        var maBoite;
-        maBoite = 10;
+            var maBoite;
+            maBoite = 10;
 
-        let monAge = 12;
+            let monAge = 12;
 
         document.write('<p>Dans la variable maBoite il y a la valeur suivante : ' + maBoite + '</p>');
 
-        console.log(maBoite);
-        console.log(monAge);
+            console.log(maBoite);
+            console.log(monAge);
 
-        console.log('Un message dans le log.');
-        console.info('Une information à envoyer dans la console.');
+            console.log('Un message dans le log.');
+            console.info('Une information à envoyer dans la console.');
 
         //boîte alert()
         // alert('Alerte ! Ceci est un message d\'alerte');
@@ -87,55 +100,55 @@
         noteEval += 2;
         console.info(noteEval);
 
-        // titre 2
+        //2- TYPE DE DONNEES
         document.write('<h2 style="background: orange;width: 75%;color: #fff;">2- Type de données</h2>');
 
-        var monTexte = 'Voici une phrase pour Audrey, avec l\'apostrophe';
-        console.info(typeof monTexte);
+            var monTexte = 'Voici une phrase pour Audrey, avec l\'apostrophe';
+            console.info(typeof monTexte);
 
         document.write(typeof(noteEval) + '<br>');
         document.write(typeof(monTexte) + '<br>');
 
-        //titre 3 Constantes
+        //3- CONSTANTES
         document.write('<h2 style="background: orange;width: 75%;color: #fff;">3- Constantes</h2>');
         
-        const BOUGE_PAS = "Ma constante impossible à modifier !";
+            const BOUGE_PAS = "Ma constante impossible à modifier !";
         
         document.write('<p style="background: grey;">' + BOUGE_PAS + '</p>');
         //pas le droit de la redéfinir !
         // BOUGE_PAS ='toto';
 
-         //titre 4 Concaténer
+         //4- CONCATENER
          document.write('<h2 style="background: orange;width: 75%;color: #fff;" title="le mot qui plaît à Audrey !">4- Concaténer</h2>');
 
-         let prenom = 'Bruce', nom = 'Willis';
+            let prenom = 'Bruce', nom = 'Willis';
          document.write(prenom + ' ' + nom);
 
-        //titre 5 Opérateurs numériques
+        //5- OPERATEURS NUMERIQUES
         document.write('<h2 style="background: orange;width: 75%;color: #fff;" title="">5- Opérateurs numériques</h2>');
 
         // addition 
-        let addition = 10 + 15;
+            let addition = 10 + 15;
         document.write('<p>Une addition : ' + addition + '</p>');
 
         // multiplication 
-        let multiplication = 10 * 15;
+            let multiplication = 10 * 15;
         document.write('<p>Une multiplication : ' + multiplication + '</p>');
 
          // soustraction 
-        var soustraction = 10 - 5;
+            var soustraction = 10 - 5;
         // console.log(soustraction);
         document.write('<p>Une soustraction : ' + soustraction + '</p>');
 
         // division 
-        var division = 10 / 3;
+            var division = 10 / 3;
         document.write('<p>Une division : ' + division + '</p>');
 
-        console.log(addition, multiplication, soustraction, division);
+            console.log(addition, multiplication, soustraction, division);
 
         //modulo
         //je partage 10 billes entre trois personnes il m'en reste combien ? 
-        var modulo = 10 % 3;
+            var modulo = 10 % 3;
         // console.log(modulo);
         document.write('<p>Le modulo de 10 % 3 est ' + modulo + '</p>');
 
@@ -144,37 +157,36 @@
 
          // CONSIGNE réaliser un prompt() demandant son âge à un utilisateur, récupérer cette donnée et l'utiliser pour afficher "vous avez XX ans"
 
-         document.write('<h3 style="background: orangered;width: 40%;color: #fff;">Exo 2 une valeur au cube et au carré</h3>');
+        document.write('<h3 style="background: orangered;width: 40%;color: #fff;">Exo 2 une valeur au cube et au carré</h3>');
         // CONSIGNE récupérer dans un prompt() une valeur donnée par un utilisateur
         // envoyer ensuite une alert() indiquant le résultat de cette valeur au cube puis au carré
         // puis on fera un document.write
 
-        let votreChiffre = prompt('Faisons un calcul, rentrez une chiffre ...');// 1- invitation avec le prompt() à saisir une valeur numérique dans la pop-up
+            let votreChiffre = prompt('Faisons un calcul, rentrez une chiffre ...');// 1- invitation avec le prompt() à saisir une valeur numérique dans la pop-up
         // console.log(votreChiffre);// 1bis je vérifie que jusque là ça fonctionne
         // document.write('Le chiffre rentré par l\'utilisateur : ' + votreChiffre );// 1bis je vérifie que jusque là ça fonctionne
 
-        let auCarre = votreChiffre * votreChiffre;//2- je calcule le contenu de la variable * 2
-        let auCube = votreChiffre * votreChiffre * votreChiffre;//3- je calcule le contenu de la variable au cube
-        console.log(auCarre, auCube);// vérification des calculs
+            let auCarre = votreChiffre * votreChiffre;//2- je calcule le contenu de la variable * 2
+            let auCube = votreChiffre * votreChiffre * votreChiffre;//3- je calcule le contenu de la variable au cube
+            console.log(auCarre, auCube);// vérification des calculs
 
-        alert('Vous avez saisi le chiffre : ' + votreChiffre + ' ce chiffre au carré est égal à ' + auCarre + '.');//4- j'affiche dans deux alert() les résultats des opérations
-        alert('Vous avez saisi le chiffre : ' + votreChiffre + ' ce chiffre au cube est égal à ' + auCube + '.');
+            alert('Vous avez saisi le chiffre : ' + votreChiffre + ' ce chiffre au carré est égal à ' + auCarre + '.');//4- j'affiche dans deux alert() les résultats des opérations
+            alert('Vous avez saisi le chiffre : ' + votreChiffre + ' ce chiffre au cube est égal à ' + auCube + '.');
 
-        document.write('<h2 style="background: orange;width: 50%;color: #fff;">6- Les conditions</h2>');
+        // 6- CONDITIONS
+        document.write('<h2 style="background: orange;width: 50%;color: #fff;">6- Conditions</h2>');
 
-        let a = 2, b = 5, c = 2;
-        //si a est supérieur à b 
-        // j'écris "a est supérieur à b "
-        //sinon j'écris "a n'est pas supérieur à b"
-
+            let a = 2, b = 5, c = 2;
+            //si a est supérieur à b 
+            // j'écris "a est supérieur à b "
+            //sinon j'écris "a n'est pas supérieur à b"
         if (a > b) {
             document.write('<p>a est supérieur à b</p>');
         } else {
             document.write('<p>a n\'est pas supérieur à b</p>');
         }
 
-
-        //tester l'égalité de a et b
+        //EXO tester l'égalité de a et b
         //puis montrer la valeur de a et b dans le document.write
         if (a == b) {// égal en valeur
             document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' : a est égal à b</p>');
@@ -217,7 +229,71 @@
             document.write('<p>ici on teste si a qui vaut ' + a + ' est supérieur à b qui vaut ' + b + ' ou si b est supérieur à c qui vaut ' + c + ' : dans ce cas aucune des deux conditions n\'est vraie.</p>');
         }
 
-        // EXO isNan ... 
+        document.write('<hr>');
+        // EXO isNaN ... is not a number
+
+        
+            var chiffre1 = 50, chiffre2 = '100', chiffre3 = 'Ma grand-mère fait du squash.';
+
+        // faire le typeof des var ci-dessus dans un console.info()
+
+            console.info(typeof chiffre1, typeof chiffre2, typeof chiffre3);
+
+        if ( isNaN(chiffre3) ) {//1- si la variable testée n'est pas un nombre (dans le cas de chiffre2 qui est un string mais contenant des chiffres le code ne sera pas exécuté)
+            document.write('<p>Voyons voir chiffre3 qui vaut ' + chiffre3 + ' ce n\'est pas un nombre !</p>' );//2- on exécute ce bloc de code
+        }
+
+        // inversons la condition is not a number isNaN avec le symbole !
+
+        // si chiffre1 est un nombre (est-ce bien un nombre ? = !isNaN) 
+        if ( !isNaN(chiffre1)) {//exécute le bloc de code suivant  
+            document.write('<p>Voyons voir : ' + chiffre1 + ' est bien un nombre</p>');
+        } else {//sinon excécute celui-ci
+            document.write('<p>Au contraire : ' + chiffre1 + ' n\'est pas un nombre</p>');
+        }
+
+        // EXO 1- récupérer dans une variable la réponse à la question suivante ; "Parmi ces couleurs, le vert, le bleu , le rouge, le orange, quelle est votre couleur préférée ?"
+
+        
+            let votreCouleur = prompt('Parmi ces couleurs ; le bleu, le blanc, le rouge, quelle est votre couleur préférée ?');
+        // console.log(votreCouleur);
+        // document.write(votreCouleur);
+
+        //EXO SUITE 2- ensuite faites une condition pour afficher selon la réponse votre couleur préféré est le vert ou le bleu ou le orange if... else if... else
+
+        if ( votreCouleur == 'bleu') {
+            document.write('<p>Votre couleur préférée est le bleu !</p>');
+        } else if ( votreCouleur == 'blanc') {
+            document.write('<p>Votre couleur préférée est le blanc !</p>');
+        } else if ( votreCouleur == 'rouge') {
+            document.write('<p>Votre couleur préférée est le rouge !</p>');
+        } else {
+            document.write('<p>Ah ! Tiens, vous n\'aimez ni le bleu, ni le blanc ni le rouge ! Vous aimez le ' + votreCouleur + '.</p>');
+        }
+
+        //EXO SUITE 3 la même chose en switch
+
+       switch(votreCouleur) {
+           case 'bleu':
+           document.write('<p>Votre couleur préférée est le bleu !</p>');
+           break;
+           case 'blanc':
+           document.write('<p>Votre couleur préférée est le blanc !</p>');
+           break;
+           case 'rouge':
+           document.write('<p>Votre couleur préférée est le rouge !</p>');
+           break;
+           default: 
+           document.write('<p>Ah ! Tiens, vous n\'aimez ni le bleu, ni le blanc ni le rouge ! Vous aimez le ' + votreCouleur + '.</p>');
+       }
+
+
+
+
+
+
+        
+        
        
 
 
