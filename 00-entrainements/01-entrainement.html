@@ -15,6 +15,11 @@
             width: 75%;
             color: #fff;
         }
+
+        .stabilo {
+            background-color:yellow;
+        }
+
     </style>
     <!-- script dans l'en-tête  -->
     <script>
@@ -27,7 +32,7 @@
         4- CONCATENER
         5- OPERATEURS NUMERIQUES
         6- CONDITIONS
-        
+        7- BOUCLES       
         */
 
         document.write('<h1>01 Entrainement JS</h1>');
@@ -287,7 +292,61 @@
            document.write('<p>Ah ! Tiens, vous n\'aimez ni le bleu, ni le blanc ni le rouge ! Vous aimez le ' + votreCouleur + '.</p>');
        }
 
+    //    7- BOUCLES 
+    document.write('<h2 style="background: orange;width: 50%;color: #fff;">7- Boucles</h2>');
 
+        // EXO WHILE boucle while tant que la var. w1 = 0 est inférieur ou égale à 15 écrivez "w1 = x puis w1 = x+1 etc..." incrémentez
+        var w1 = 0;
+        while (w1 <= 15) {
+            document.write('w1 = ' + w1 + ' puis  ');
+            w1++;
+        }
+    
+        // EXO FOR var for1 = 0 et qui est for 1 <= 10 incrémentez
+
+        for (let for1 = 0; for1 <= 10; for1++) {
+            document.write('La variable "for1" contient ' + for1 + ' à chaque passage de la boucle soit '+ (for1 + 1) + '<br>');
+        }
+
+        document.write('<hr>');
+
+
+        // EXO 1- une boucle for2 = 0 for2 <=10 et on écrit "la variable for2 contient X à chaque passage de la boucle."
+        // 2- avec if else rajoutez à la fin de la boucle " et la boucle se termine là."
+
+        for (let for2 = 0; for2 <= 10; for2++) { 
+            if(for2 <= 10){
+
+            } else {
+
+            }          
+                    document.write('La variable "for2" contient ' + for2 + ' à chaque passage de la boucle,<br>');            
+        }//fin de la boucle
+
+        document.write('<hr>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.write('<hr>');
+
+        for (let for2 = 0; for2 <= 10; for2++) {
+            if(for2==10){
+                document.write('La variable "for2" contient ' + for2 + ' à chaque passage de la boucle, <span class="stabilo">et là elle se termine !</span>');
+            } else {
+                    document.write('La variable "for2" contient ' + for2 + ' à chaque passage de la boucle,<br>');
+                }
+             
+        }
 
 
 

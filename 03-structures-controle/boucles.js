@@ -33,7 +33,7 @@ while ( w1 < 10 ){//tant que c'est vrai le test ou la condition
     w1++;// incrémente la valeur de la variable de départ
 }
 
-//dans le p while2 
+// dans le p while2 
 let w2 = 10;
 //boucler tant que w2 est inférieur à 10
 while ( w2 < 10 ) {
@@ -41,7 +41,7 @@ while ( w2 < 10 ) {
     w2++;
 }
 
-//on va faire la même avec do... while "faire ... tant que" 
+// on va faire la même avec do... while "faire ... tant que" 
 let w3 = 10;
 do {// fait
     document.getElementById('while3').innerHTML += 'Voyez ! w3 contient la valeur ' + w3 + '<br>';
