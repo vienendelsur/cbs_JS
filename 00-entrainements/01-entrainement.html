@@ -314,41 +314,30 @@
         // EXO 1- une boucle for2 = 0 for2 <=10 et on écrit "la variable for2 contient X à chaque passage de la boucle."
         // 2- avec if else rajoutez à la fin de la boucle " et la boucle se termine là."
 
-        for (let for2 = 0; for2 <= 10; for2++) { 
-            if(for2 <= 10){
-
-            } else {
-
-            }          
-                    document.write('La variable "for2" contient ' + for2 + ' à chaque passage de la boucle,<br>');            
-        }//fin de la boucle
-
         document.write('<hr>');
-
-
-
-
-
-
-
-
-
-
-
-
-
-        document.write('<hr>');
-
-        for (let for2 = 0; for2 <= 10; for2++) {
-            if(for2==10){
+        for (let for2 = 0; for2 <= 10; for2++) {// for et les 3 phases
+            if(for2==10){//test
                 document.write('La variable "for2" contient ' + for2 + ' à chaque passage de la boucle, <span class="stabilo">et là elle se termine !</span>');
             } else {
-                    document.write('La variable "for2" contient ' + for2 + ' à chaque passage de la boucle,<br>');
-                }
-             
-        }
+                document.write('La variable "for2" contient ' + for2 + ' à chaque passage de la boucle,<br>');
+                }//fin de if elss
+        }//fin de for
+
+        document.write('<hr>');
+        //AUTRE MANIÈRE DE FAIRE CETTE BOUCLE FOR
+        for (for3 = 0; for3 <= 10; for3++){
+            if(for3 < 10){
+                document.write('<p>La variable for3 contient ' + for3 + ', incrémenté à chaque passage de la boucle : ' + for3 + ' + 1 = '+ (for3 + 1) +'.</p>');
+            } else {
+                document.write('<p>La variable for3 contient ' + for3 + ', la boucle s\'arrête ici.</p>');
+            } // fin de if else
+        } // fin de for
 
 
+
+        document.write('<hr>');
+        //NOUVELLE BOUCLE
+        
 
 
         
