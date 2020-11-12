@@ -27,13 +27,13 @@ document.getElementById('p3').innerHTML = randomX100();
 
 //2- une simple multiplication
 
-function multiplier(nbr1,nbr2) {
+function multiplier(nbr1,nbr2) {//les paramètres de notre fonction
     // return (nbr1 * nbr2);
     return ('Multiplions ' + nbr1 + ' x ' + nbr2 + ' = ' + (nbr1 * nbr2) );
 }
 
 // console.log(multiplier(2,6));
-document.getElementById('p4').innerHTML = multiplier(145,9);
+document.getElementById('p4').innerHTML = multiplier(145,9);//la fonction et les arguments
 
 // soustraction 
 function soustraire(nbr1,nbr2) {
