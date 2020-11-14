@@ -33,7 +33,8 @@
         5- OPERATEURS NUMERIQUES
         6- CONDITIONS
         7- BOUCLES
-        8- FONCTIONS       
+        8- FONCTIONS
+        9- SUPPLEMENTS       
         */
 
         document.write('<h1>01 Entrainement JS</h1>');
@@ -510,17 +511,31 @@
 
         quelleEcole (sonAge);//appel de fonction
 
-        // REPRENDRE LA ???
+        //9- SUPPLÉMENTS
+        document.write('<h2 style="background: orange;width: 50%;color: #fff;">9- Suppléments</h2>');
+
+        // parseInt()
+        // parseInt() une fonction qui permet de transformer un string en number, changer le type de la variable 
+
+        var chiffreNew = '20000 lieux sous les mers';// une string
+        console.log(typeof chiffreNew);// confirmation que nous avons une string
+        var parse = parseInt(chiffreNew);// pour changer le type de la variable chiffreNew on la passe dans une nouvelle variable dans laquelle on utilise la fonction parseInt()
+        console.log(typeof parse);// cette nouvelle variable est de type number
+
+        var chiffreNew2 = 50;
+        console.log(parse + chiffreNew2);// ici on additionne 
+
+        var chiffreNew3 = 182.7635;
+        console.info(parseInt(chiffreNew3));
+
+        //parseFLoat() transforme une string en number avec la virgule 
+        var chiffreNew4 = '10.23689';
+
+        console.log(parseFloat(chiffreNew4));
+
         
 
-//         var aNEW = 12;
-// function MultipliePar2(b) {
-// var aNEW = b * 2;
-// return aNEW;
-// }
-// document.write("Le double de 4 est ",MultipliePar2(4));
-// document.write('<br />');
-// document.write("La valeur de aNew est ",aNew);
+
 
 
     </script>

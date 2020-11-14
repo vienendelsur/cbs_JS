@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - Exo</title>
+    <script>
+        // EXERCICE 1 - Déclaration des variables
+
+        // num qui contient le nombre 255
+        // txt qui contient la chaîne de caractères 255
+        // bin (pour binaire ou binary) qui contient la valeur booléenne vraie
+        // flt (pour float décimal ou flottant) qui contient la valeur 7,23
+
+        // affichez les variables dans des console.log
+
+        let num = 255;
+        let txt = '255';
+        let bin = true;
+        let flt = 7.23;
+        
+
+        console.log(num, txt, bin, flt);
+        // console.log(txt);
+        // console.log(bin);
+        // console.log(flt);
+
+        // EXERCICE 2 - 
+
+        // Appliquez à num l'opérateur d'incrémentation (ce qui doit donner 256)
+        // Concaténez à la chaîne txt la chaîne suivante : " est ici une chaîne de caractères."
+        // Inversez la valeur logique de bin 
+        // Ajoutez à flt la valeur contenue dans num
+
+        num++;
+        // num = ++num;
+
+        // document.write(txt + ' est ici une chaîne de caractères.');
+        
+        txt = txt + ' est ici une chaîne de caractères.';
+
+        // bin = false;
+        // bin2 = true;
+        // bin2 = !bin2;
+
+        flt = flt + num;
+        flt += num;
+
+        console.log(num,txt, bin, flt);
+
+        // EXERCICE 3 -
+
+        // num2 qui contient le nombre 23
+        // txt2 qui contient la chaîne de caractère 33
+        // Affichez le résultat de txt2 + num2 avec console.log
+        // Affichez le résultat de num2 + txt2
+
+        var num2 = 23;
+        var txt2 = '33';
+
+        console.log(txt2 + num2);
+        // on ne peut pas additionner une string et un number !
+
+        // 1 Il ne faut pas faire des opérations avec des variables de types différents
+        // 2 Si on veut le faire il faut écrire les conversions dans le programme
+        // 3 JS est un langage typé, très précis 
+
+        // EXERCICE 4
+        // avec nbr1 et lettres
+        // on ajoute une variable transformeEnNombre qui contient 0
+        // Convertir la chaîne contenue dans lettres en nombre avec parseInt() et mettre le résultat dans tmp
+        // Ajouter à nbr1 le contenu de tmp "temporaire"
+        var nbr1 = 22;
+        var lettres = '18';
+        
+
+        var transformeEnNombre = 0;// cette variable est de type number, je lui affecte la valeur à zéro car après elle me sert à changer un string en number
+        console.log(transformeEnNombre);
+
+        transformeEnNombre = parseInt(lettres);//parse = analyser INT = integer (entier)
+        console.info(nbr1 + transformeEnNombre);
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        // console.info(num, txt, bin, flt);
+
+    </script>
+</head>
+<body>
+    <h1>Exercice 1 et 2</h1>
+</body>
+</html>
