@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 02 - Valeurs</title>
+    <!-- google font lato et source code pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Valeurs</h1>
+        <p>Observez le code ci-dessous et tentez de prévoir les valeurs finales de chaque variable à la fin de chaque ligne (par exemple après la ligne 'var a = 2;' si je faisais un console.log de a j'aurai 2 comme résultat. cf. <a href="img/02-valeurs.png">capture d'écran</a></p>
+            <hr>
+        L'idée est de faire les calculs vous-mêmes, sur une feuille par exemple AVANT de regarder dans la console !</p>
+        <table>
+            <tbody>
+                <tr><td>var a = 2;</td></tr>
+                <tr><td>a = a - 1;</td></tr>
+                <tr><td>a++;</td></tr>
+                <tr><td>var b = 8;</td></tr>
+                <tr><td>b += 2;</td></tr>
+                <tr><td>var c = a + b * b;</td></tr>
+                <tr><td>var d = a * b + b;</td></tr>
+                <tr><td>var e = a * (b + b);</td></tr>
+                <tr><td>var f = a * b / a;</td></tr>
+                <tr><td>var g = b / a * a;</td></tr>
+            </tbody>
+        </table>
+        <hr>
+        <table>
+            
+                <thead>
+                    <tr>
+                        <th>Opération</th>
+                        <th>Explication</th>
+                    </tr>
+                </thead>
+            <tbody>
+                <tr>
+                    <td>var a = 2;</td>
+                    <td><em>Explication</em> : var contient 2</td>
+                </tr>
+                <tr>
+                    <td>a = a - 1;</td>
+                    <td><em>Explication</em> : 2-1 = 1</td>
+                </tr>
+                <tr>
+                    <td>a++;</td>
+                    <td><em>Explication</em> : 1+1 = 2</td>
+                </tr>
+                <tr>
+                    <td>var b = 8;</td>
+                    <td><em>Explication</em> : var contient 8</td>
+                </tr>
+                <tr>
+                    <td>b += 2;</td>
+                    <td><em>Explication</em> : 8+2= 10 (b contient 10)</td>
+                </tr>
+                <tr>
+                    <td>var c = a + b * b;</td>
+                <td><em>Explication</em> : (10x10 = 100) + 2 = 102</td>
+                </tr>
+                <tr>
+                    <td>var d = a * b + b;</td>
+                    <td><em>Explication</em> : (2x10 = 20) + 10 = 30</td>
+                </tr>
+                <tr>
+                    <td>var e = a * (b + b);</td>
+                    <td><em>Explication</em> : (10+10 = 20) x 2 = 40</td>
+                </tr>
+                <tr>
+                    <td>var f = a * b / a;</td>
+                    <td><em>Explication</em> : (10/2 = 5) x 2 = 10</td>
+                </tr>
+                <tr>
+                    <td>var g = b / a * a;</td>
+                    <td><em>Explication</em> : (10/2 = 5) x 2 = 10  </td>
+                </tr>
+            </tbody>
+        </table>
+        <blockquote>Vérifiez vos prévisions en créant ce programme puis en le déboguant pour observer les valeurs des variables.</blockquote>
+    </div> 
+    <script type="text/javascript" src="02-valeurs.js" ></script>
+</body>
+</html>
