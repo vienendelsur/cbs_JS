@@ -11,7 +11,9 @@ for (let i = 1;  i < 10; i++) {
     console.log(diese);
 }
 
-console.log('Le triangle avec une boucle for correction Baroude');
+console.log('Le triangle avec une boucle for, et la fonciton repeat() correction Baroude');
+
+// cf. https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/repeat
 
 for (i = 0; i < 10; i++) {
     console.log('#'.repeat(i));
@@ -19,4 +21,19 @@ for (i = 0; i < 10; i++) {
 
 // avec une boucle while 
 
+console.log('Le triangle avec une boucle while');
 let diese2 = '';
+let w1 = 1;
+
+// while (w1 <=10) {
+//     diese2 += '#';
+//     console.log(diese2);
+//     w1++;
+// }
+
+while (w1 <=10) {
+    // diese2 += '#';
+    diese2 = diese2 + '#.';
+    console.log(diese2);
+    w1++;
+}
