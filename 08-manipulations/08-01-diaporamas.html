@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- PARTIE 08  DIAPORAMA -->
+    <!-- 08-01 cf. cours Numa-->
+    <!-- cf. ??? VOIR -->
+    <head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- la ligne suivante vient de getbootstrap et comporte une valeur supplémentaire "shrink-to-fit=no" cela concerne les mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JS - VIII 01 - Diaporamas</title>
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--styles perso -->
+    <style>
+
+    </style>
+    </head>
+
+    <body>
+        <div class="jumbotron">
+            <h1 id="titreNiveau1" class="display-4">JS - VIII 01 - Les diaporamas</h1>
+            <p class="lead">3 diaporamas en JS</p>
+        </div><!-- fin jumbotron -->
+        
+        <div class="container border border-primary p-4">
+
+            <div class="row border border-danger m-2 p-2">
+
+                <div class="col-6">
+                    <h2>1- Un 1er diaporama, avec des photos de plages...</h2>
+                    <p>1ère façon de faire, sur les images directement je mets un onclick...</p>
+                    <p>Dans la balise <code>img</code>, je mets cet attribut : <code class="bg-light p-1">onclick="this.src='img/e.jpg';this.alt='une autre plage';"</code></p>
+                </div><!-- fin col -->
+
+                <div class="col-6">
+                    <div id="diaporama1">
+                        <img src="img/plage1.jpg" alt="la plage" class="img-fluid" onclick="this.src='img/plage2.jpg';this.alt='une autre plage';">
+                    </div><!-- fin diaporama -->
+                </div><!-- fin col -->
+                
+            </div><!-- fin row -->
+
+
+            <div class="row border border-warning m-2 p-2">
+                <div class="col-6">
+                    <div id="diaporama2" class="border border-info p-1">
+                        <img src="img/piscine1.jpg" alt="une piscine" class="img-fluid" id="imgDiapo2">
+                        <div class="row justify-content-center">
+                            <!-- cf. https://getbootstrap.com/docs/4.5/layout/grid/ -->
+                            <button type="button" class="btn btn-outline-warning my-2" id="btnDiapo2">Changer d'image</button>
+                        </div>
+                    </div><!-- fin diaporama -->
+                </div><!-- fin col -->
+
+                <div class="col-6">
+                    <h2>2- Un 2nd diaporama...</h2>
+                    <p>Ce second diaporama est fait avec une fonction anonyme dans un écouteur d'évènement, dans les scripts en bas de page</p>
+                    <blockquote class="bg-light p-2">  
+                        <code>
+                        document.getElementById('btnDiapo2').addEventListener('click', function() { <br>
+                            document.getElementById('imgDiapo2').src = 'img/piscine2.jpg';<br>
+                            document.getElementById('imgDiapo2').alt = 'la piscine est belle';<br>
+                        })
+                    </code>  
+                </blockquote>               
+                </div><!-- fin col -->
+                
+            </div><!-- fin row -->
+
+        </div><!-- fin container -->
+
+    <!-- le JS de Bootstrap est optionnel -->
+    <!-- En 1er JQuery, puis Popper.js et le JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <!-- Mes scripts -->
+    <script>   
+    
+    
+       // DIAPORAMA 2
+       // une fonction pour le diaporama 2
+        document.getElementById('btnDiapo2').addEventListener('click', function() { // je sélectionne le bouton et je lui attribue au clique une fonction pour changer d'image et changer le contenu de alt
+            document.getElementById('imgDiapo2').src = 'img/piscine2.jpg';
+            document.getElementById('imgDiapo2').alt = 'la piscine est belle';
+        })
+        console.log(typeof btnDiapo2);
+
+    </script>
+    
+    </body>
+</html>
