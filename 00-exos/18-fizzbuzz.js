@@ -43,7 +43,7 @@ for (var nombre = 1; nombre <=100; nombre++) {
          }
      } // fin de la boucle for
 
-     console.log('4ème version Mike >>>>>');
+    console.log('4ème version Mike >>>>>');
      for (var nombre = 1; nombre <= 100; nombre++) {
         var message = '';//initialisation de la var message
         if (nombre % 3 === 0) { //Si le modulo de 3 est egale a 0, il est divisible par 3
@@ -52,8 +52,8 @@ for (var nombre = 1; nombre <=100; nombre++) {
         if (nombre % 5 === 0){ //Si le modulo de 5 est egale a 0, il est divisible par 5
             message += 'Buzz';
             }
-        if (message == ''){
-            message = nombre;
+        if (message == ''){ // et sinon on affiche le nombre
+            message = nombre;// en même temps la variable va concaténer Fizz + Buzz si le nombre est un multiple de 3 ET de de 5
             }
         console.log(message);
     }//fin de for
