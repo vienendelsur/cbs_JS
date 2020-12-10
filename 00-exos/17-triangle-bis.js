@@ -23,3 +23,7 @@ for (let i = 0; i < nbLigne; i++) {
     }
     document.getElementById('p1').innerHTML += espaces + etoile + '<br>';
 }
+for(var s=1; s<=2; s++) {
+    document.getElementById('p1').innerHTML+='|';
+    document.getElementById('p1').innerHTML+='</br>';
+  }
