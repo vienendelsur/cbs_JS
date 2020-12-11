@@ -1,29 +1,22 @@
-let nbLigne = 10;
+// alert('coucou');
 
-for (let i = 0; i < nbLigne; i++) {
-    let etoile = '';
+//le triangle régis et mathieu
+
+let nbrLigne = 7;
+
+for (let ligne = 0; ligne < nbrLigne; ligne++) {
+    let etoiles = '';// les variables sont vides 
     let espaces = '';
-    for (let col = 0; col < nbLigne - (i + 1); col++) {
+
+    //1er for pour les espaces au début de la ligne
+    // sur la 1ère (qui aura une étoile) je place 6 espaces à gauche de l'étoile 1ère opération le nbr de lignes - l'étoile placée
+    for (let col = 0; col < nbrLigne - (ligne + 1); col++) {
         espaces += ' ';
     }
-    for (let col = 0; col < 2 * i + 1; col++) {
-        etoile += '*';
-    }
-    console.log(espaces + etoile);
-}
 
-for (let i = 0; i < nbLigne; i++) {
-    let etoile = '';
-    let espaces = '';
-    for (let col = 0; col < nbLigne - (i + 1); col++) {
-        espaces += ' ';
+    //2nd for pour les étoiles 
+    for (let col = 0; col < 2 * ligne + 1; col++) {
+        etoiles += '*';
     }
-    for (let col = 0; col < 2 * i + 1; col++) {
-        etoile += '*';
-    }
-    document.getElementById('p1').innerHTML += espaces + etoile + '<br>';
+    console.log(espaces + etoiles);
 }
-for(var s=1; s<=2; s++) {
-    document.getElementById('p1').innerHTML+='|';
-    document.getElementById('p1').innerHTML+='</br>';
-  }
